@@ -4,7 +4,7 @@ require("dotenv").config();
 
 const RecipeRoute = require("./routes/recipe.route");
 const AuthRoute = require("./routes/auth.route");
-
+const port = process.env.PORT || 4000;
 const app = express();
 
 app.use(express.json());
@@ -21,8 +21,8 @@ mongoose
 
   .then(() => {
     console.log("Connected!");
-    app.listen(4000, () => {
-      console.log("server is running 4000");
+    app.listen(port, () => {
+      console.log(`server is running ${port}`);
     });
   })
   .catch((e) => {
