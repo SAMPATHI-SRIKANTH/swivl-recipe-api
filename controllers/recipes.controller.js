@@ -50,7 +50,7 @@ const updateRecipe = async (req, res) => {
 const deleteRecipe = async (req, res) => {
   try {
     const { id } = req.params;
-    const recipe = await Recipe.findByIdAndUpdate(id);
+    const recipe = await Recipe.findByIdAndDelete(id);
     if (!recipe) {
       return res.status(404).json({ message: "Recipe not found" });
     }
