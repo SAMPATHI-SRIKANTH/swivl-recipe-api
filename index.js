@@ -1,5 +1,6 @@
 const express = require("express");
 const mongoose = require("mongoose");
+require("dotenv").config();
 
 const RecipeRoute = require("./routes/recipe.route");
 const AuthRoute = require("./routes/auth.route");
@@ -16,9 +17,7 @@ app.get("/", (req, res) => {
 });
 
 mongoose
-  .connect(
-    "mongodb+srv://srikanth1a:sri1947@cluster0.7hufv5b.mongodb.net/Node-Api?retryWrites=true&w=majority&appName=Cluster0"
-  )
+  .connect(process.env.DB)
 
   .then(() => {
     console.log("Connected!");
