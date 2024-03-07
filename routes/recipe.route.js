@@ -9,6 +9,7 @@ const {
   deleteRecipe,
   getProfile,
 } = require("../controllers/recipes.controller");
+
 const router = express.Router();
 
 router.get("/", authMiddleware, getRecipes);
