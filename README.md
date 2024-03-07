@@ -37,7 +37,7 @@
 - **Endpoint:** `http://localhost:4000/api/auth/profile`
 - **Method:** `GET`
 - **Request Headers:**
-  "Authorization":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWU5MzAxZmU2YmQ4M2RmNmM3YjViM2MiLCJpYXQiOjE3MDk3ODEyMDIsImV4cCI6MTcwOTc4NDgwMn0.dxdIT6RdtPI5S8FWHzfvOtRfTnfdxy9gUTb0CNkoD4Y"
+  "Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWU5MzAxZmU2YmQ4M2RmNmM3YjViM2MiLCJpYXQiOjE3MDk3ODEyMDIsImV4cCI6MTcwOTc4NDgwMn0.dxdIT6RdtPI5S8FWHzfvOtRfTnfdxy9gUTb0CNkoD4Y"
   
 - **Response:**
 
@@ -52,7 +52,7 @@
 - **Endpoint:** `http://localhost:4000/api/recipes`
 - **Method:** `GET`
 - **Request Headers:**
-  "Authorization":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWU5MzAxZmU2YmQ4M2RmNmM3YjViM2MiLCJpYXQiOjE3MDk3ODEyMDIsImV4cCI6MTcwOTc4NDgwMn0.dxdIT6RdtPI5S8FWHzfvOtRfTnfdxy9gUTb0CNkoD4Y"
+    "Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWU5MzAxZmU2YmQ4M2RmNmM3YjViM2MiLCJpYXQiOjE3MDk3ODEyMDIsImV4cCI6MTcwOTc4NDgwMn0.dxdIT6RdtPI5S8FWHzfvOtRfTnfdxy9gUTb0CNkoD4Y"
   
 - **Response:**
 
@@ -85,7 +85,8 @@
 - - **Endpoint:** `http://localhost:4000/api/recipes/65e88125976bf5004d846fde`
 - **Method:** `GET`
 - **Request Headers:**
-  "Authorization":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWU5MzAxZmU2YmQ4M2RmNmM3YjViM2MiLCJpYXQiOjE3MDk3ODEyMDIsImV4cCI6MTcwOTc4NDgwMn0.dxdIT6RdtPI5S8FWHzfvOtRfTnfdxy9gUTb0CNkoD4Y"
+- 
+    "Authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWU5MzAxZmU2YmQ4M2RmNmM3YjViM2MiLCJpYXQiOjE3MDk3ODEyMDIsImV4cCI6MTcwOTc4NDgwMn0.dxdIT6RdtPI5S8FWHzfvOtRfTnfdxy9gUTb0CNkoD4Y"
   
 - **Response:**
 -   {
